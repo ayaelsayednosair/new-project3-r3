@@ -1,0 +1,34 @@
+<h1>product data</h1>
+<br>
+<input #product class="mb-3">
+<button (click)="add(product.value)">Add</button>
+<!-- <br>
+<input type="text" #myvalue value="enterdat">
+<button (click)="add(product.value)">Add</button>
+<button (click)="getdataeventfromuser(myvalue.value)">click</button> -->
+<br>
+<section class="listing">
+
+  <ul>
+    <li *ngFor="let product of prodtdetailfromchild" class="mx-4">
+      <div class="card text-center my-3" style="width:200px;">
+        <div class="card-body">
+          <h2>{{ product.name }}</h2>
+          {{product.price}}
+        </div>
+        <p>{{ product.pdetails }}</p>
+        <button class="btn btn-primary">view</button>
+      </div>
+    </li>
+  </ul>
+
+</section>
+
+
+
+
+
+
+<!-- <input type="text" #myvalue value="enterdat" />
+<button (click)="add(product.value)">Add</button>
+<button (click)="getdataeventfromuser(myvalue.value)">click</button> -->
